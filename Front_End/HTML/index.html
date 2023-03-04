@@ -23,6 +23,9 @@
         <li>
           <a href="#vacanza">Pianifica una vacanza</a>
         </li>
+        <li>
+          <a href="#contattami">Contattami</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -122,13 +125,13 @@
         <ul>
           <li>
             <p>Ho sentito che un buon posto dove andare sono i Caraibi.</p>
+            <figure>
+              <img src="img/caraibi.jpg" alt="Caraibi dall'alto" title="Caraibi" width="600" loading="lazy">
+              <figcaption>
+                Una bellissima anteprima di quelli che saranno i caraibi.
+              </figcaption>
+            </figure>
           </li>
-          <figure>
-            <img src="img/caraibi.jpg" alt="Caraibi dall'alto" title="Caraibi" width="600" loading="lazy">
-            <figcaption>
-              Una bellissima anteprima di quelli che saranno i caraibi.
-            </figcaption>
-          </figure>
           <li>
             <p>Ho sentito parlare molto bene di questi posti:</p>
             <address>
@@ -158,6 +161,111 @@
         </dl>
       </section>
     </article>
+
+    <hr>
+
+    <article id="contattami">
+      <h2>Contattami</h2>
+      <p>Spero che tu ti faccia sentire!</p>
+
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Info Personali</legend>
+          <p>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Scrivi il tuo nome" autocomplete="on" required
+              autofocus>
+          </p>
+          <p>
+            <label for="cognome">Cognome: </label>
+            <input type="text" name="cognome" id="cognome" placeholder="Scrivi il tuo cognome" autocomplete="on"
+              required>
+          </p>
+          <p>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="Inserisci la password" required>
+          </p>
+          <p>
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required>
+          </p>
+          <p>
+            <label for="nascita">Data di nascita: </label>
+            <input type="number" name="nascita" id="nascita" min="1950" max="2015" step="1" value="2000" required>
+          </p>
+          <p>
+            <label for="caffe">Caffe preferito: </label>
+            <select name="caffe" id="caffe">
+              <optgroup label="Caffe">
+                <option value="caffe regolare" selected>Caffe Regolare</option>
+                <option value="caffe freddo">Caffe Freddo</option>
+                <option value="caffe ginseng">Caffe Ginseng</option>
+              </optgroup>
+              <optgroup label="Drinks">
+                <option value="Latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+              </optgroup>
+            </select>
+          </p>
+          <!-- <p>
+            <label for="caffe">Caffe Preferito: </label>
+            <input type="text" name="caffe" id="caffe" list="lista-dei-caffe">
+            <datalist id="lista-dei-caffe">
+              <option value="Caffe"></option>
+              <option value="Latte"></option>
+              <option value="Espresso"></option>
+              <option value="Cortado"></option>
+              <option value="Other"></option>
+            </datalist>
+          </p> -->
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Qual è il tuo cibo preferito?</legend>
+          <p>
+            <input type="radio" name="cibo" id="pizza" value="pizza">
+            <label for="pizza">Pizza</label>
+          </p>
+          <p>
+            <input type="radio" name="cibo" id="tacos" value="tacos">
+            <label for="tacos">Tacos</label>
+          </p>
+          <p>
+            <input type="radio" name="cibo" id="pasta" value="pasta">
+            <label for="pasta">Pasta</label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Hai degli animali?</legend>
+          <p>
+            <input type="checkbox" name="animali" id="cani" value="cani">
+            <label for="cani">Cani</label>
+          </p>
+          <p>
+            <input type="checkbox" name="animali" id="gatti" value="gatti">
+            <label for="gatti">Gatti</label>
+          </p>
+          <p>
+            <input type="checkbox" name="animali" id="conigli" value="conigli">
+            <label for="conigli">Conigli</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Inviami una nota</legend>
+          <label for="messaggio">Il tuo messaggio</label>
+          <br>
+          <textarea name="messaggio" id="messaggio" cols="30" rows="10"
+            placeholder="Scrivi il tuo messaggio quì."></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Invia</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Invia (POST)</button>
+        <button type="reset">Reset</button>
+      </form>
+    </article>
+
   </main>
 
   <hr>
