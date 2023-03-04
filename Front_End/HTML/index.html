@@ -3,105 +3,171 @@
 <html lang="it">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="author" content="Emanuel Bisicchia" />
-  <meta name="description" content="Questa pagina contiene tutto ciò che sto studiando." />
+  <meta charset="UTF-8">
+  <meta name="author" content="Emanuel Bisicchia">
+  <meta name="description" content="Questa pagina contiene tutto ciò che sto studiando.">
   <title>La mia prima pagina web</title>
-  <link rel="icon" href="img/html5_icon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="main.css" type="text/css" />
+  <link rel="icon" href="img/html5_icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
 <body>
-  <h1>I miei obiettivi per l'anno</h1>
+  <header>
+    <h1>I miei obiettivi per l'anno</h1>
 
-  <hr />
+    <nav aria-label="primary-navigation">
+      <ul>
+        <li>
+          <a href="#html">Impara l'HTML</a>
+        </li>
+        <li>
+          <a href="#vacanza">Pianifica una vacanza</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <nav>
-    <ul>
-      <li>
-        <a href="#html">Impara l'HTML</a>
-      </li>
-      <li>
-        <a href="#vacanza">Pianifica una vacanza</a>
-      </li>
-    </ul>
-  </nav>
+  <hr>
 
-  <hr />
+  <main>
+    <article id="html">
+      <h2>Sono pronto per imparare l'HTML</h2>
+      <p>Questa è la mia prima pagina :D</p>
 
-  <section id="html">
-    <h2>Sono pronto per imparare l'HTML</h2>
-    <p>Questa è la mia prima pagina :D</p>
-
-    <figure>
-      <img src="img/html5_icon.png" alt="icon HTML5" title="Sto imparando l'HTML" width="300" height="300" />
-      <figcaption><strong>Un Esempio di codice HTML5:</strong></figcaption>
-      <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
-    </figure>
-
-    <h3>Il mio programma giornaliero</h3>
-    <p>Lasciami dire come io:</p>
-    <ol>
-      <li>...imparo a sviluppare sviluppare siti web.</li>
-      <li>...pianifico uno schedule.</li>
-      <li>
-        ...utilizzo risorse da
-        <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org">MDN</a> </abbr>.
-      </li>
-    </ol>
-  </section>
-
-  <hr />
-
-  <section id="vacanza">
-    <h2>Sto pianificando una vacanza</h2>
-    <p>Devo lavorare molto <em>per potermela permettere.</em></p>
-    <p>Io vivo a Catania, vorrei andare in spiaggia.</p>
-    <h3>Posti che io vorrei visitare</h3>
-    <ul>
-      <li>
-        <p>Ho sentito che un buon posto dove andare sono i Caraibi.</p>
-      </li>
-
-      <figure>
-        <img src="img/caraibi.jpg" alt="Caraibi dall'alto" title="Caraibi" width="600" loading="lazy" />
-        <figcaption>
-          Una bellissima anteprima di quelli che saranno i caraibi.
-        </figcaption>
-      </figure>
-
-      <li>
-        <p>Ho sentito parlare molto bene di questi posti:</p>
-        <address>
-          Margaritaville Island Reserve Riviera <br />
-          Palermo <br />
-          Catania
-        </address>
-
+      <section>
+        <h3>HTML5</h3>
         <figure>
-          <img src="img/vacanza.jpg" alt="Mare" title="Mare di Margaritaville" width="600" loading="lazy" />
-          <figcaption>
-            Una bellissima anteprima di quelli che saranno i caraibi.
-          </figcaption>
+          <img src="img/html5_icon.png" alt="icon HTML5" title="Sto imparando l'HTML" width="300" height="300">
+          <figcaption><strong>Un Esempio di codice HTML5:</strong></figcaption>
         </figure>
+        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+      </section>
 
-      </li>
-    </ul>
-    <h3>Posti dove non vorrei andare</h3>
-    <dl>
-      <dt>Polo Nord</dt>
-      <dd>Ho sentito che fa molto <strong>freddo!</strong></dd>
-      <dt>Polo Sud</dt>
-      <dd>Anche quì fa molto freddo</dd>
-      <dt>Paesi montani</dt>
-      <dd>Troppo freddo anche quì</dd>
-    </dl>
-  </section>
+      <section>
+        <h3>Il mio programma giornaliero</h3>
+        <p>Lasciami dire come io:</p>
+        <ol>
+          <li>...imparo a sviluppare sviluppare siti web.</li>
+          <li>...pianifico uno schedule.</li>
+          <li>
+            ...utilizzo risorse da
+            <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org">MDN</a> </abbr>.
+          </li>
+        </ol>
+        <aside>
+          <details>
+            <summary>Indovina il <mark>numero di ore</mark> che impiego a programmare ogni giorno.</summary>
+            <p>Inizio alle <time datetime="08:00">8:00</time> di mattina e scrivo codice per 5 ore ogni giorno</p>
+          </details>
+        </aside>
 
-  <hr />
+        <h3>Programma</h3>
 
-  &lt;&lt;&lt; &copy; <a href="about.html">Emanuel Bisicchia</a> &gt;&gt;&gt;
-  <a href="#">Back to top</a>
+        <table>
+          <caption>Il mio programma giornaliero</caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Orario</th>
+              <th scope="col">Attività</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Mattina</th>
+              <td>8:00-13:00</td>
+              <td>Programmo</td>
+            </tr>
+            <tr>
+              <th scope="row">Pranzo</th>
+              <td>13:00-14:00</td>
+              <td>Mangio</td>
+            </tr>
+            <tr>
+              <th scope="row">Pomeriggio</th>
+              <td>14:00-20:00</td>
+              <td>Studio per gli altri corsi</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Sera e notte</th>
+              <td rowspan="2">Altro tempo</td>
+              <td>Tempo Libero</td>
+            </tr>
+            <tr>
+              <td>Dormire</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Questo è quello che faccio io ogni giorno :D</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </article>
+
+    <hr>
+
+    <article id="vacanza">
+      <h2>Vacanza :D</h2>
+
+      <section>
+        <h2>Sto pianificando una vacanza</h2>
+        <p>Devo lavorare molto <em>per potermela permettere.</em></p>
+        <p>Io vivo a Catania, vorrei andare in spiaggia.</p>
+      </section>
+
+      <section>
+        <h3>Posti che io vorrei visitare</h3>
+        <ul>
+          <li>
+            <p>Ho sentito che un buon posto dove andare sono i Caraibi.</p>
+          </li>
+          <figure>
+            <img src="img/caraibi.jpg" alt="Caraibi dall'alto" title="Caraibi" width="600" loading="lazy">
+            <figcaption>
+              Una bellissima anteprima di quelli che saranno i caraibi.
+            </figcaption>
+          </figure>
+          <li>
+            <p>Ho sentito parlare molto bene di questi posti:</p>
+            <address>
+              Margaritaville Island Reserve Riviera <br>
+              Palermo <br>
+              Catania
+            </address>
+            <figure>
+              <img src="img/vacanza.jpg" alt="Mare" title="Mare di Margaritaville" width="600" loading="lazy">
+              <figcaption>
+                Una bellissima anteprima di quelli che saranno i caraibi.
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Posti dove non vorrei andare</h3>
+        <dl>
+          <dt>Polo Nord</dt>
+          <dd>Ho sentito che fa molto <strong>freddo!</strong></dd>
+          <dt>Polo Sud</dt>
+          <dd>Anche quì fa molto freddo</dd>
+          <dt>Paesi montani</dt>
+          <dd>Troppo freddo anche quì</dd>
+        </dl>
+      </section>
+    </article>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>
+      &lt;&lt;&lt; &copy; <a href="about.html">Emanuel Bisicchia</a> &gt;&gt;&gt;
+    </p>
+    <p><a href="#">Back to top</a></p>
+  </footer>
 </body>
 
 </html>

@@ -6,3 +6,14 @@ body {
     background-color: rgb(255, 255, 255);
     color: #000000;
 }
+
+table,
+tr,
+th,
+td,
+caption {
+    border: 1px solid #eee;
+    font-family: "Courier New", Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
