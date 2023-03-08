@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emanuel Bisicchia">
+    <meta name="description" content="Contattaci">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Contattaci</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contattaci</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/#about">Cos'è <abbr title="Little Taco Shop">LTS</abbr></a>
+                </li>
+                <li>
+                    <a href="/#menu">Il nostro menù</a>
+                </li>
+                <li>
+                    <a href="orario.html">Orario</a>
+                </li>
+            </ul>
+        </nav>
+        <figure>
+            <img src="img/tacos.jpg" alt="Alcuni tacos" width="400">
+            <figcaption> Tacos e Bevande</figcaption>
+        </figure>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="form_contatti">
+            <h2>Il nostro form per contattarci</h2>
+
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Inviaci un messaggio</legend>
+                    <p>
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="nome" placeholder="Il tuo nome" required>
+                    </p>
+                    <p>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="La tua email" required>
+                    </p>
+                    <p>
+                        <label for="messaggio">Il tuo messaggio: </label> <br>
+                        <textarea name="messaggio" id="messaggio" cols="30" rows="10"
+                            placeholder="Scrivi il tuo messaggio quì..."></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Invia</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+        <section id="posizione">
+            <h2>Dove ci troviamo?</h2>
+            <address> Strada dei Tacos 75, Catania, Sicilia</address>
+            <p><em>Telefono:</em> <a href="tel:+555-555-55555">555-555-55555</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">Vai all'inizio</a>
+        <hr>
+        <p>Copyright &copy; The Little Taco Shop</p>
+    </footer>
+
+</body>
+
+</html>

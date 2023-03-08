@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emanuel Bisicchia">
+    <meta name="description" content="Un piccolo negozio che vende taco">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Il Piccolo Negozio di Taco</title>
+</head>
+
+<body>
+    <header>
+        <h1>Benvenuti al piccolo negozio di taco</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">Cos'è <abbr title="Little Taco Shop">LTS</abbr></a>
+                </li>
+                <li>
+                    <a href="#menu">Il nostro menù</a>
+                </li>
+                <li>
+                    <a href="orario.html">Orario</a>
+                </li>
+                <li>
+                    <a href="contattaci.html">Contattaci</a>
+                </li>
+            </ul>
+        </nav>
+        <figure>
+            <img src="img/tacos.jpg" alt="Alcuni tacos" width="400">
+            <figcaption> Tacos e Bevande</figcaption>
+        </figure>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="about">
+            <h2>Cos'è <abbr title="Little Taco Shop">LTS</abbr></h2>
+            <p><abbr title="Little Taco Shop">LTS</abbr> è stata fondata nel 2022. Il nostro negozio nasce
+                <strong>dall'amore per i tacos</strong>🌮🌮🌮. Noi speriamo che il nostro piccolo negozio possa
+                essere un valore aggiunto per questa piccola città.
+            </p>
+
+            <h3>Taco Trivia</h3>
+            <details>
+                <summary>Quando i tacos per la prima volta sono apparsi negli Stati Uniti?</summary>
+                <p>Jeffrey M. Pilcher, è stato professore di storia all'Università del Minnesota, lui menziona che i
+                    tacos sono apparsi per la prima volta nel <time datetime="1905"> 1905</time>. <br>(Fonte:
+                    <cite> <a href="https://it.wikipedia.org/wiki/Taco">Wikipedia Taco</a>
+                    </cite>)
+                </p>
+            </details>
+        </section>
+
+        <hr>
+
+        <section id="menu">
+            <h2>Il nostro menù</h2>
+
+            <table>
+                <caption>I nostri Tacos</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Tacos</th>
+                        <th scope="col">Quantità</th>
+                        <th scope="col">Prezzo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="3">Croccante</th>
+                        <td>1</td>
+                        <td>€1.50</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>€2.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>€3.25</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="3">Morbido</th>
+                        <td>1</td>
+                        <td>€2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>€3.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>€4.50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Patatine e Salsa €2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <br>
+
+    <footer>
+        <a href="#">Vai all'inizio</a>
+        <hr>
+        <p>Copyright &copy; The Little Taco Shop</p>
+    </footer>
+</body>
+
+</html>
